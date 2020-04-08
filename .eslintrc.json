@@ -1,0 +1,88 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "standard",
+    "semistandard"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    /* Start fixing typescript-eslint. sigh. */
+    "brace-style": "off",
+    "comma-spacing": "off",
+    "default-param-last": "off",
+    "func-call-spacing": "off",
+    "indent": "off",
+    "no-array-constructor": "off",
+    "no-dupe-class-members": "off",
+    "no-empty-function": "off",
+    "no-extra-parens": "off",
+    "no-extra-semi": "off",
+    "no-magic-numbers": "off",
+    "no-unused-expressions": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "no-useless-constructor": "off",
+    "quotes": "off",
+    "require-await": "off",
+    "return-await": "off",
+    "semi": "off",
+    "space-before-function-paren": "off",
+    "no-inner-declarations": "off",
+    "no-tabs": "off",
+
+    "@typescript-eslint/brace-style": "warn",
+    "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
+    "@typescript-eslint/default-param-last": "error",
+    "@typescript-eslint/func-call-spacing": ["error", "never"],
+    "@typescript-eslint/no-array-constructor": "error",
+    "@typescript-eslint/no-dupe-class-members": "error",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-extra-parens": ["error", "functions"],
+    "@typescript-eslint/no-extra-semi": "error",
+    "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/no-unused-expressions": "warn",
+    "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false, "variables": false }],
+    "@typescript-eslint/no-useless-constructor": "error",
+    //"@typescript-eslint/require-await": "off",
+    //"@typescript-eslint/return-await": "warn",
+    "@typescript-eslint/space-before-function-paren": ["error", "always"],
+
+    /* Start of configuration */
+    "@typescript-eslint/indent":          [ "error", "tab", {
+      "VariableDeclarator": true,
+      "outerIIFEBody": true,
+      "MemberExpression": true,
+      "FunctionDeclaration": { "parameters": true, "body": true },
+      "FunctionExpression": { "parameters": true, "body": true },
+      "CallExpression": { "arguments": true },
+      "ArrayExpression": true,
+      "ObjectExpression": true,
+      "ImportDeclaration": true,
+      "flatTernaryExpressions": false,
+      "SwitchCase": true,
+      "ignoreComments": false,
+      "ignoredNodes": ["TemplateLiteral *"]
+    } ],
+    //"@typescript-eslint/linebreak-style": [ "error", "unix" ],
+    "@typescript-eslint/quotes":          [ "error", "single" ],
+    "@typescript-eslint/semi":            [ "error", "always" ],
+    "@typescript-eslint/no-unused-vars":    "error",
+    "comma-dangle":                       [ "error", "always-multiline" ],
+    "generator-star-spacing":             [ "error", "after" ]
+  }
+}
