@@ -1,6 +1,6 @@
 /// <reference path="./uinput.d.ts"/>
-import { Buttons, Axes, ButtonMap, AxisMap } from './interface';
 import * as uinput from 'uinput';
+import { Axes, AxisMap, ButtonMap, Buttons } from './interface';
 
 let device: any = null;
 const NEG_ONE = 0xFFFFFFFF;

@@ -1,5 +1,5 @@
-import * as Keybd from './keybd';
 import * as Alpha from './alpha';
+import * as Keybd from './keybd';
 export { Keybd, Alpha };
 
 export interface Layout {
