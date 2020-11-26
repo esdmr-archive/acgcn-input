@@ -11,18 +11,18 @@ enum OutputButtonMap {
 	X = uinput.BTN_X,
 	Y = uinput.BTN_Y,
 	Z = uinput.BTN_Z,
-	LT = uinput.BTN_TL2,
-	RT = uinput.BTN_TR2,
+	LT = uinput.BTN_TL,
+	RT = uinput.BTN_TR,
 	ST = uinput.BTN_START,
 }
 
 enum OutputAxisMap {
-	MX = uinput.ABS_HAT0X,
-	MY = uinput.ABS_HAT0Y,
-	CX = uinput.ABS_HAT1X,
-	CY = uinput.ABS_HAT1Y,
-	DX = uinput.ABS_HAT2X,
-	DY = uinput.ABS_HAT2Y,
+	MX = uinput.ABS_X,
+	MY = uinput.ABS_Y,
+	CX = uinput.ABS_RX,
+	CY = uinput.ABS_RY,
+	DX = uinput.ABS_HAT0X,
+	DY = uinput.ABS_HAT0Y,
 }
 
 const setupConfig = {

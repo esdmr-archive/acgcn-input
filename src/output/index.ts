@@ -1,4 +1,5 @@
 import { Axes, AxisMap, ButtonMap, Buttons, checkEventType, OutputEvent, OutputEventType } from './interface';
+import { sleep } from '../timer';
 
 interface Driver {
 	readonly axisMap: AxisMap;
@@ -24,10 +25,6 @@ export async function initOutput () {
 	}
 
 	return driver;
-}
-
-function sleep (time: number): Promise<void> {
-	return new Promise((resolve) => setTimeout(resolve, time));
 }
 
 export const SHORTEST_DELAY = 10;

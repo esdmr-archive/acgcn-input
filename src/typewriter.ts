@@ -90,13 +90,13 @@ function calculateInput (posDiff: Readonly<Position>, switchInputs: OutputEvent[
 	const absY = Math.abs(posDiff.y);
 
 	for (let i = 0; i < absX; i++) {
-		inputs.push({ type: OutputEventType.ABS, key: Axes.CX, value: signX });
-		inputs.push({ type: OutputEventType.ABS, key: Axes.CX, value: 0 });
+		inputs.push({ type: OutputEventType.ABS, key: Axes.MX, value: signX });
+		inputs.push({ type: OutputEventType.ABS, key: Axes.MX, value: 0 });
 	}
 
 	for (let i = 0; i < absY; i++) {
-		inputs.push({ type: OutputEventType.ABS, key: Axes.CY, value: signY });
-		inputs.push({ type: OutputEventType.ABS, key: Axes.CY, value: 0 });
+		inputs.push({ type: OutputEventType.ABS, key: Axes.MY, value: signY });
+		inputs.push({ type: OutputEventType.ABS, key: Axes.MY, value: 0 });
 	}
 
 	inputs.push({ type: OutputEventType.BTN, key: Buttons.A, value: 1 });
