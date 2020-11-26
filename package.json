@@ -2,12 +2,11 @@
   "name": "acgcn-input",
   "version": "1.0.0",
   "description": "Animal Crossing for Gamecube input Utilities",
-  "main": "build/main.js",
   "scripts": {
     "preinstall": "node -e \"!process.env.npm_config_user_agent.startsWith('pnpm/') && !console.log('Use \\`npx pnpm install\\` to install dependencies in this repository\\n') && process.exit(1)\"",
     "build": "tsc -p .",
     "watch": "tsc -w -p .",
-    "start": "node build/main.js"
+    "start": "node build/example.js"
   },
   "keywords": [
     "Animal Crossing",
